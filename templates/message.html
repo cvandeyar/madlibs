@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>Message</title>
+</head>
+<body>
+
+	There once was a {{ color }} 
+	{% if noun %}
+		{% for item in noun %}
+			{{item}},
+		{% endfor%}
+	{% endif %}
+	sitting in the Hackbright Lab.
+	When {{ person }} went to pick it up, it burst into flames in a totally
+	{{ adjective }} way.
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>Game</title>
+</head>
+<body>
+
+	<form action="/madlib">
+		
+		<input type="text" name="person" value="{{ person }}" hidden>
+		
+		Please select a color <select name="colors" required>
+			<option value="" selected disabled hidden>Select option</option>
+			<option value="red">red</option>
+			<option value="yellow">yellow</option>
+			<option value="blue">blue</option>
+			<option value="white">white</option>
+		</select>
+		
+		<br>
+		Please select a noun
+		<br>
+		<input type="checkbox" name="noun" value="cat"> cat <br>
+		<input type="checkbox" name="noun" value="dog"> dog <br>
+		<input type="checkbox" name="noun" value="pig"> pig <br>
+		<input type="checkbox" name="noun" value="dinosaur"> dinosaur <br>
+		<input type="checkbox" name="noun" value="monkey"> monkey <br>
+		<input type="checkbox" name="noun" value="lizard"> lizard <br>	
+		</select>
+
+		Please select an adjective
+		<input type="text" name="adjectives"><br>
+
+		<input type="submit" value="submit">
+
+	</form>
+
+</body>
+</html>
